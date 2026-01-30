@@ -1,0 +1,147 @@
+{
+	"name": "Json2",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "data_9ad652ea-4917-4025-82ae-d16d5f5b3010_97cbcb02-b658-4e6c-b9e3-e47bc48c5bc7.json",
+				"fileSystem": "destination"
+			}
+		},
+		"schema": {
+			"type": "object",
+			"properties": {
+				"name": {
+					"type": "object",
+					"properties": {
+						"common": {
+							"type": "string"
+						},
+						"official": {
+							"type": "string"
+						},
+						"nativeName": {
+							"type": "object",
+							"properties": {
+								"cat": {
+									"type": "object",
+									"properties": {
+										"official": {
+											"type": "string"
+										},
+										"common": {
+											"type": "string"
+										}
+									}
+								},
+								"eng": {
+									"type": "object",
+									"properties": {
+										"official": {
+											"type": "string"
+										},
+										"common": {
+											"type": "string"
+										}
+									}
+								},
+								"srp": {
+									"type": "object",
+									"properties": {
+										"official": {
+											"type": "string"
+										},
+										"common": {
+											"type": "string"
+										}
+									}
+								},
+								"rus": {
+									"type": "object",
+									"properties": {
+										"official": {
+											"type": "string"
+										},
+										"common": {
+											"type": "string"
+										}
+									}
+								},
+								"zho": {
+									"type": "object",
+									"properties": {
+										"official": {
+											"type": "string"
+										},
+										"common": {
+											"type": "string"
+										}
+									}
+								},
+								"ber": {
+									"type": "object",
+									"properties": {
+										"official": {
+											"type": "string"
+										},
+										"common": {
+											"type": "string"
+										}
+									}
+								},
+								"mey": {
+									"type": "object",
+									"properties": {
+										"official": {
+											"type": "string"
+										},
+										"common": {
+											"type": "string"
+										}
+									}
+								},
+								"spa": {
+									"type": "object",
+									"properties": {
+										"official": {
+											"type": "string"
+										},
+										"common": {
+											"type": "string"
+										}
+									}
+								},
+								"ara": {
+									"type": "object",
+									"properties": {
+										"official": {
+											"type": "string"
+										},
+										"common": {
+											"type": "string"
+										}
+									}
+								}
+							}
+						}
+					}
+				},
+				"capital": {
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				},
+				"population": {
+					"type": "integer"
+				}
+			}
+		}
+	}
+}
